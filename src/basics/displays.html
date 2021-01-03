@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udemy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./src/assets/udemy-favicon-icon.png" />
+  </head>
+  <body>
+    <!-- 
+      d-{tela}-{display}
+
+    // telas
+    xs - muito pequena (celulares)
+    xm - pequena (tablet)
+    md - média (notebok)
+    lg - grande (tv)
+      - nenhuma (para todas as telas)
+
+    // Displays
+    none
+    inline
+    inline-block
+    block
+    grid
+    flex
+
+     -->
+
+    <!-- Exemplo display none e block -->
+    <div class="d-none d-md-block">Funciona só para notebook e tv</div>
+
+    <!-- Exemplo de display inline (Ajustar elemento por elemento)-->
+    <div>
+      <p class="d-inline">Linha 1</p>
+      <p class="d-inline">Linha 2</p>
+    </div>
+
+    <!-- Display flex (alinhamento dos elementos de uma caixa) -->
+    <!-- Direção -->
+    <div class="mt-5 d-flex flex-row-reverse">
+      <p>Flex 1</p>
+      <p>Flex 2</p>
+      <p>Flex 3</p>
+      <p>Flex 4</p>
+    </div>
+
+    <!-- Justify (alinhamento horizontal) -->
+    <div class="mt-5 d-flex justify-content-center">
+      <p>Flex 1</p>
+      <p>Flex 2</p>
+      <p>Flex 3</p>
+      <p>Flex 4</p>
+    </div>
+
+    <!-- Align (alinhamento vertical) -->
+    <div class="mt-5 d-flex align-items-stretch">
+      <p>Flex 1</p>
+      <p>Flex 2</p>
+      <p>Flex 3</p>
+      <p>Flex 4</p>
+    </div>
+
+    <!-- Quebra de itens para próxima linha -->
+    <div class="mt-5 d-flex flex-wrap justify-content-around">
+      <p>Flex 1</p>
+      <p>Flex 2</p>
+      <p>Flex 3</p>
+      <p>Flex 4</p>
+    </div>
+
+    <!-- Ordem de exibição -->
+    <div class="mt-5 d-flex">
+      <p class="order-3">Flex 1</p>
+      <p class="order-1">Flex 2</p>
+      <p class="order-2">Flex 3</p>
+      <p class="order-4">Flex 4</p>
+    </div>
+
+    <!-- Fim do display flex -->
+  </body>
+</html>
